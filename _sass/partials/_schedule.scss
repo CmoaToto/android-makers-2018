@@ -258,3 +258,27 @@ $label-width: 100%;
     width: 36px;
     height: 36px;
 }
+
+.toggle-label {
+    font-size: 16px;
+    padding: 0.5em;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto 1em;
+    border: 1px solid #999;
+    border-radius: 30px;
+    background: #ccc;
+    color: #444;
+}
+
+.toggle-content {
+    color: #B0B3C2;
+    font-family: monospace;
+    font-size: 16px;
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+.toggle-input {
+    display: none;
+}

@@ -580,4 +580,30 @@
         google.maps.event.addDomListener(window, 'load', initialize);
     }
 
+    //Filters schedule
+    $(function () {
+        $("#toggle-fr").click(function () {
+            if ($(this).is(":checked")) {
+                $(".toggle-content-fr").css("opacity","1");
+                $(".toggle-label-fr").css("background","#ccc");
+                $(".toggle-label-fr").css("color","#444");
+            } else {
+                $(".toggle-content-fr").css("opacity","0.2");
+                $(".toggle-label-fr").css("background","#fff");
+                $(".toggle-label-fr").css("color","#999");
+            }
+        });
+        $("#toggle-en").click(function () {
+            if ($(this).is(":checked")) {
+                $(".toggle-content-en").css("opacity","1");
+                $(".toggle-label-en").css("background","#ccc");
+                $(".toggle-label-en").css("color","#444");
+            } else {
+                $(".toggle-content-en").css("opacity","0.2");
+                $(".toggle-label-en").css("background","#fff");
+                $(".toggle-label-en").css("color","#999");
+            }
+        });
+    });
+
 })(jQuery);

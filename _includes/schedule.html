@@ -1,6 +1,13 @@
 <!-- Begin Schedule Section -->
 <section id="schedule" class="schedule">
     <p>All information may change at any time before and during the event to make this event the best for you.</p>
+    <!-- Checkbox toggle FR-->
+    <input type="checkbox" value="selected" id="toggle-fr" class="toggle-input toggle-input-fr" checked>
+    <label for="toggle-fr" class="toggle-label toggle-label-fr">FR</label>
+    <!-- Checkbox toggle EN-->
+    <input type="checkbox" value="selected" id="toggle-en" class="toggle-input toggle-input-en" checked>
+    <label for="toggle-en" class="toggle-label toggle-label-en">EN</label>
+    <!----------------------->
     <div class="content-wrapper">
         {% for day in site.data.schedule %}
         <div class="schedule-table col-md-10 col-md-offset-1 col-xs-12">
